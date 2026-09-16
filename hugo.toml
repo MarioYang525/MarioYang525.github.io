@@ -1,0 +1,52 @@
+baseURL = "https://marioyang525.github.io/"
+locale = "en-us"
+title = "MarioYang525"
+theme = "simple-dark"
+
+# Content sections
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[pagination]
+pagerSize = 10
+
+[markup]
+[markup.highlight]
+style = "monokai"
+lineNos = false
+tabWidth = 4
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+  description = "Cybersecurity blog — CTF writeups, pentesting notes and AI for security."
+  author = "MarioYang525"
+  # Text shown on the welcome (home) page. Change freely.
+  welcomeTitle = "Welcome."
+  welcomeSubtitle = "A quiet place for CTF writeups, pentest notes and AI-driven security research."
+  footerText = "Built with Hugo. All writeups are for educational purposes only."
+
+[menus]
+[[menus.main]]
+  name = "About Me"
+  pageRef = "/about"
+  weight = 10
+[[menus.main]]
+  name = "Writeups"
+  pageRef = "/writeups"
+  weight = 20
+[[menus.main]]
+  name = "AI for Security"
+  pageRef = "/ai-for-security"
+  weight = 30
+[[menus.main]]
+  name = "CTF"
+  pageRef = "/ctf"
+  weight = 40
+[[menus.main]]
+  name = "Pentest"
+  pageRef = "/pentest"
+  weight = 50
+[[menus.main]]
+  name = "Projects"
+  pageRef = "/projects"
+  weight = 60

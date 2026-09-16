@@ -1,0 +1,28 @@
+{{ define "main" }}
+<article class="page single">
+  <header class="page-header">
+    <p class="post-meta">{{ .Date.Format "2006-01-02" }}{{ with .CurrentSection }} &middot; <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-desc">{{ . }}</p>{{ end }}
+  </header>
+
+  <div class="page-content">
+    {{ .Content }}
+  </div>
+
+  {{ $attachments := .Resources.Match "files/*" }}
+  {{ with $attachments }}
+  <section class="attachments">
+    <h2>Files</h2>
+    <ul>
+      {{ range . }}
+      <li>
+        <a href="{{ .RelPermalink }}" download>{{ .Name }}</a>
+        <span class="file-size">{{ div (len .Content) 1024 }} KB</span>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+</article>
+{{ end }}

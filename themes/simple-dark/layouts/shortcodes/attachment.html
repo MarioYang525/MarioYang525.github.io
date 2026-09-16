@@ -1,0 +1,11 @@
+{{/*
+  Inline download link for a file inside the same page bundle.
+  Usage: attach a file with: attachment src="files/report.pdf"
+*/}}
+{{ $file := .Page.Resources.GetMatch (.Get "src") }}
+{{ if $file }}
+  <a href="{{ $file.RelPermalink }}" download>{{ .Get "title" | default $file.Name }}</a><span class="file-size">{{ div (len $file.Content) 1024 }} KB</span>
+{{ else }}
+  {{ warnf "attachment shortcode: file %q not found in page bundle of %s" (.Get "src") .Page.File.Path }}
+  <em>[missing file: {{ .Get "src" }}]</em>
+{{ end }}
