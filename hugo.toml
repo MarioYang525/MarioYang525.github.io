@@ -21,9 +21,9 @@ unsafe = true
   description = "Cybersecurity blog — CTF writeups, pentesting notes and AI for security."
   author = "MarioYang525"
   # Text shown on the welcome (home) page. Change freely.
-  welcomeTitle = "Welcome."
-  welcomeSubtitle = "A quiet place for CTF writeups, pentest notes and AI-driven security research."
-  footerText = "Built with Hugo. All writeups are for educational purposes only."
+  welcomeTitle = "WELCOME!!! ^_^"
+  welcomeSubtitle = "还在建设中。。。"
+  footerText = ""
 
 [menus]
 [[menus.main]]
@@ -33,7 +33,7 @@ unsafe = true
 [[menus.main]]
   name = "Writeups"
   pageRef = "/writeups"
-  weight = 20
+  weight = 40
 [[menus.main]]
   name = "AI for Security"
   pageRef = "/ai-for-security"
@@ -41,7 +41,7 @@ unsafe = true
 [[menus.main]]
   name = "CTF"
   pageRef = "/ctf"
-  weight = 40
+  weight = 20
 [[menus.main]]
   name = "Pentest"
   pageRef = "/pentest"
