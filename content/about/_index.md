@@ -6,10 +6,7 @@ weight: 10
 
 <!-- ✏️ HOW TO EDIT: replace the text below with your own introduction. -->
 
-Hi, I'm **MarioYang525**.
-
-I'm interested in cybersecurity, including CTF competitions, penetration
-testing, and applying AI to security problems.
+Hi
 
 ## Skills
 
@@ -25,4 +22,4 @@ testing, and applying AI to security problems.
 ## Contact
 
 - GitHub: [MarioYang525](https://github.com/MarioYang525)
-- Email: your-email@example.com
+- Email: CHNMario520@163.com  yjx20060525@gmail.com
