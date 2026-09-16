@@ -1,25 +1,11 @@
 # MarioYang525.github.io
 
-Personal cybersecurity blog built with **Hugo**, deployed on **GitHub Pages**.
-Dark minimal theme, all English.
-
 Live site: <https://marioyang525.github.io/>
 
 ---
 
-## 1. 首次发布（重要，只需做一次）
 
-### 方式 A：GitHub 网页上传（无 Git 也能发）
-
-1. 打开你的仓库 <https://github.com/MarioYang525/MarioYang525.github.io>
-2. 点击 **Add file → Upload files**，把本文件夹里的**所有内容**（含 `.github` 隐藏文件夹）拖进去
-   - Windows 资源管理器里看不到 `.github` 时：先在文件夹顶部勾选"显示 → 隐藏的项目"
-   - 不能上传整个文件夹本身，要上传文件夹**里面的**所有文件
-3. 点 **Commit changes**
-4. 打开仓库 **Settings → Pages**，把 **Source** 改为 **GitHub Actions**（默认可能是 Branch/None，必须改）
-5. 稍等 1~2 分钟，去 **Actions** 标签页看到绿色对勾后，访问 <https://marioyang525.github.io/> 即可
-
-### 方式 B：Git 命令行
+## 1. Git 命令行
 
 先安装 [Git for Windows](https://git-scm.com/download/win)，然后在仓库根目录执行：
 
@@ -42,9 +28,6 @@ git commit -m "post: 新文章说明"
 git push
 ```
 
-推送后 GitHub Actions 会自动构建并发布，约 1 分钟生效。
-
----
 
 ## 2. 目录结构
 
@@ -148,9 +131,6 @@ content/writeups/my-new-writeup/
 ---
 
 ## 4. 本地预览（可选）
-
-仓库作者已把 Hugo 下载到 `D:\Trae\Trae project\tools\hugo\hugo.exe`。
-在仓库根目录运行：
 
 ```powershell
 D:\Trae\Trae` project\tools\hugo\hugo.exe server
