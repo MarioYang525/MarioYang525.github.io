@@ -4,22 +4,42 @@ description: "Who I am and what I do."
 weight: 10
 ---
 
-<!-- ✏️ HOW TO EDIT: replace the text below with your own introduction. -->
+<div class="avatar-card">
+  <img src="https://q.qlogo.cn/headimg_dl?dst_uin=1944916288&spec=640&img_type=jpg" alt="Mario's avatar">
+  <p class="avatar-name">Mario</p>
+  <p class="avatar-bio">Your tagline goes here — edit content/about/_index.md to change this line.</p>
+  <div class="social-icons">
+    <a href="https://x.com/Mariolovelava" target="_blank" rel="noopener" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="javascript:void(0)" id="wechat-link" title="WeChat: click to copy 18195966525"><i class="fa-brands fa-weixin"></i></a>
+    <a href="https://wpa.qq.com/msgrd?v=3&uin=1944916288&site=qq&menu=yes" target="_blank" rel="noopener" title="QQ: 1944916288"><i class="fa-brands fa-qq"></i></a>
+  </div>
+</div>
 
-Hi
+## About
+
+Hiiiii~
 
 ## Skills
 
-- Skill area 1
-- Skill area 2
-- Skill area 3
+- sleeping
+- eating
+- daydreaming
 
 ## Certifications
 
-- Cert 1
-- Cert 2
+- nothing here temporarily😭
+
 
 ## Contact
 
 - GitHub: [MarioYang525](https://github.com/MarioYang525)
-- Email: CHNMario520@163.com  yjx20060525@gmail.com
+- Email: CHNMario520@163.com yjx20060525@gmail.com
+- Phone: 86 18195966525
+
+<script>
+document.getElementById("wechat-link").addEventListener("click", function () {
+  navigator.clipboard.writeText("18195966525").then(function () {
+    alert("WeChat ID copied: 18195966525");
+  });
+});
+</script>
