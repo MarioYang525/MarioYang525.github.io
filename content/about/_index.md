@@ -7,7 +7,7 @@ weight: 10
 <div class="avatar-card">
   <img src="https://q.qlogo.cn/headimg_dl?dst_uin=1944916288&spec=640&img_type=jpg" alt="Mario's avatar">
   <p class="avatar-name">Mario</p>
-  <p class="avatar-bio">Your tagline goes here — edit content/about/_index.md to change this line.</p>
+  <p class="avatar-bio">still under construction...</p>
   <div class="social-icons">
     <a href="https://x.com/Mariolovelava" target="_blank" rel="noopener" title="X"><i class="fa-brands fa-x-twitter"></i></a>
     <a href="javascript:void(0)" id="wechat-link" title="WeChat: click to copy 18195966525"><i class="fa-brands fa-weixin"></i></a>
