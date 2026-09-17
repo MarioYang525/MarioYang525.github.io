@@ -242,3 +242,30 @@ a:hover { text-decoration: underline; }
   .hero-title { font-size: 2rem; }
   .header-inner { flex-direction: column; align-items: flex-start; }
 }
+
+/* ---------- about avatar card ---------- */
+.avatar-card {
+  text-align: center;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 20px;
+  margin-bottom: 40px;
+}
+
+.avatar-card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+}
+
+.avatar-name { font-size: 1.4rem; font-weight: 700; margin: 16px 0 4px; }
+
+.avatar-bio { color: var(--text-dim); font-size: 0.92rem; margin: 0 0 20px; }
+
+.social-icons { display: flex; justify-content: center; gap: 22px; font-size: 1.5rem; }
+
+.social-icons a { color: var(--text-dim); }
+
+.social-icons a:hover { color: var(--accent); text-decoration: none; }
