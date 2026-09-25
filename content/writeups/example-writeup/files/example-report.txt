@@ -1,5 +1,0 @@
-This is a placeholder report file.
-
-Replace it with your real report (PDF / Markdown / anything else) inside the
-same "files" folder. Hugo publishes every file here and lists it at the bottom
-of the post page automatically.
