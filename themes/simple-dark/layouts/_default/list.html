@@ -11,6 +11,8 @@
   </div>
   {{ end }}
 
+  {{ $files := .Resources.Match "files/*" }}
+
   <ul class="post-list">
     {{ range .Pages.ByDate.Reverse }}
     <li class="post-item">
@@ -19,10 +21,26 @@
       {{ with .Description }}<p class="post-summary">{{ . }}</p>{{ end }}
     </li>
     {{ else }}
+    {{ if not $files }}
     <li class="post-item empty">
       <p>Nothing here yet &mdash; new posts are coming soon.</p>
     </li>
     {{ end }}
+    {{ end }}
   </ul>
+
+  {{ with $files }}
+  <section class="attachments">
+    <h2>Files</h2>
+    <ul>
+      {{ range . }}
+      <li>
+        <a href="{{ .RelPermalink }}" download>{{ path.Base .Name }}</a>
+        <span class="file-size">{{ div (len .Content) 1024 }} KB</span>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
 </article>
 {{ end }}
