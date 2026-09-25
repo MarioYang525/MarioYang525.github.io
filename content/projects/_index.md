@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-description: "Tools, research and side projects.点击文件可在线预览^_^"
+description: "Tools, research and side projects."
 weight: 60
 ---
 
