@@ -1,6 +1,7 @@
 ---
 title: "CTF"
-description: "Capture The Flag competition notes and solutions."
+description: "Capture The Flag competition notes and solutions.
+点击文件可在线预览^_^"
 weight: 40
 ---
 
