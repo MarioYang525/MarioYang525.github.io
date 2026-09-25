@@ -11,7 +11,7 @@ weight: 10
   <div class="social-icons">
     <a href="https://x.com/Mariolovelava" target="_blank" rel="noopener" title="X"><i class="fa-brands fa-x-twitter"></i></a>
     <a href="javascript:void(0)" id="wechat-link" title="WeChat: click to copy 18195966525"><i class="fa-brands fa-weixin"></i></a>
-    <a href="https://wpa.qq.com/msgrd?v=3&uin=1944916288&site=qq&menu=yes" target="_blank" rel="noopener" title="QQ: 1944916288"><i class="fa-brands fa-qq"></i></a>
+    <a href="javascript:void(0)" id="qq-link" title="QQ: click to copy 1944916288"><i class="fa-brands fa-qq"></i></a>
   </div>
 </div>
 
@@ -40,6 +40,11 @@ Hiiiii~
 document.getElementById("wechat-link").addEventListener("click", function () {
   navigator.clipboard.writeText("18195966525").then(function () {
     alert("WeChat ID copied: 18195966525");
+  });
+});
+document.getElementById("qq-link").addEventListener("click", function () {
+  navigator.clipboard.writeText("1944916288").then(function () {
+    alert("QQ ID copied: 1944916288");
   });
 });
 </script>
