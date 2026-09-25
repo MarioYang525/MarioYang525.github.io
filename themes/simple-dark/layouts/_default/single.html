@@ -10,14 +10,15 @@
     {{ .Content }}
   </div>
 
-  {{ $attachments := .Resources.Match "files/*" }}
-  {{ with $attachments }}
+  {{ $files := .Resources.Match "files/*" }}
+  {{ with $files }}
   <section class="attachments">
     <h2>Files</h2>
     <ul>
       {{ range . }}
       <li>
-        <a href="{{ .RelPermalink }}" download>{{ .Name }}</a>
+        <a href="{{ .RelPermalink }}" target="_blank" rel="noopener">{{ path.Base .Name }}</a>
+        <a href="{{ .RelPermalink }}" download title="click here to download" style="margin-left:8px;text-decoration:none;color:var(--text-dim)"><i class="fa-solid fa-download"></i></a>
         <span class="file-size">{{ div (len .Content) 1024 }} KB</span>
       </li>
       {{ end }}
