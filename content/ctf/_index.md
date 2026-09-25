@@ -2,7 +2,7 @@
 title: "CTF"
 description: "Capture The Flag competition notes and solutions.
 点击文件可在线预览^_^"
-weight: 40
+weight: 20
 ---
 
 <!-- ✏️ HOW TO ADD A NEW CTF POST: create a folder under content/ctf/ named
