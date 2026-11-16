@@ -50,3 +50,7 @@ unsafe = true
   name = "Projects"
   pageRef = "/projects"
   weight = 60
+[[menus.main]]
+  name = "Friend Links"
+  pageRef = "/friends"
+  weight = 70
