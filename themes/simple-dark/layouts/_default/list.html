@@ -21,7 +21,7 @@
       {{ with .Description }}<p class="post-summary">{{ . }}</p>{{ end }}
     </li>
     {{ else }}
-    {{ if not $files }}
+    {{ if and (not $files) (not $.Content) }}
     <li class="post-item empty">
       <p>Nothing here yet &mdash; new posts are coming soon.</p>
     </li>
