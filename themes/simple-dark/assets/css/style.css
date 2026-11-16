@@ -310,3 +310,18 @@ a:hover { text-decoration: underline; }
   font-weight: 600;
   color: var(--text);
 }
+
+.friend-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.friend-card .friend-desc {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-dim);
+  line-height: 1.4;
+}
